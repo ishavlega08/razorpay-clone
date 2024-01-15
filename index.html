@@ -170,7 +170,10 @@
 
             <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
                 <!-- heading -->
-                <h2 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold">Accept Payments with Razorpay Payment Suite</h2>
+                <h2 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold hidden md:block">Accept Payments with Razorpay Payment Suite</h2>
+
+                <h2 class="font-mullish text-center text-4xl leading-[1.2] font-extrabold md:hidden">Explore Razorpay Payment Suite</h2>
+
                 <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
 
                 <!-- content box -->
@@ -212,7 +215,7 @@
                         <!-- for button and hyperlink -->
                         <div class="flex flex-col-reverse md:flex-row items-center space-x-4">
                             <button 
-                            class="bg-lightBlue text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 py-[14px] px-[18px] flex items-center "
+                            class="bg-lightBlue w-full md:w-fit text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 py-[14px] px-[18px] flex items-center justify-center md:justify-start"
                             >Sign Up Now
                             <svg
                                 viewBox="0 0 24 24"
@@ -226,7 +229,7 @@
                             </svg></button>
 
                             <!-- hyperlink -->
-                            <div class="flex items-center cursor-pointer group">
+                            <div class="flex md:items-center cursor-pointer group">
                                 <a href="#" 
                                 class="font-mullish text-lightBlue500 font-bold group-hover:text-grayBlue transition-all duration-200"
                                 >Know More</a>
@@ -242,7 +245,7 @@
                 </div>
 
                 <!-- Card Section -->
-                <div class="w-full grid grid-cols-3 gap-4 mt-10">
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
 
                     <!-- Box 1 -->
                     <div class="w-full min-h-[15rem] relative cursor-pointer">
@@ -578,7 +581,7 @@
                     class="absolute top-[150px] -right-[180px] w-[200px]">
                     
                     <!-- content box -->
-                    <div class="relative w-full bg-[#181c2e] p-10 py-12 border border-slate-700 rounded-md z-20">
+                    <div class="relative w-full bg-[#181c2e] p-10 py-12 border border-slate-700 rounded-md z-20 ">
                         <!-- left section -->
                         <div class="flex flex-col justify-between w-full h-full gap-12 z-20">
 
@@ -612,9 +615,9 @@
                             </ul>
         
                             <!-- for button and hyperlink -->
-                            <div class="flex items-center space-x-4">
+                            <div class="flex flex-col-reverse md:flex-row items-center space-x-4">
                                 <button 
-                                class="relative bg-lightBlue flex items-center justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200">
+                                class="relative bg-lightBlue flex self-stretch md:w-fit items-center justify-center md:justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200">
                                     Sign Up
                                     <div class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex justify-center items-center">
                                         <!-- arrow -->
@@ -646,11 +649,11 @@
                         <!-- background image for content box -->
                         <img src="./images/buisness-banking.png" alt="" 
                         loading="lazy"
-                        class="max-w-[600px] absolute right-0 bottom-0 z-4">
+                        class="absolute right-0 bottom-0 z-4 hidden md:max-w-[400px] md:block lg:max-w-[600px] lg:block">
                     </div>
 
                     <!-- card box -->
-                    <div class="w-full grid grid-cols-3 gap-4 my-14">
+                    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-14">
 
                         <!-- Box 1 -->
                         <div class="w-full min-h-[15rem] relative cursor-pointer featureCard2">
@@ -829,7 +832,7 @@
                     </div>
 
                     <!-- demo box -->
-                    <div class="relative w-full flex items-center justify-evenly border border-slate-700 rounded-md mb-24 gap-y-6 p-8 ">
+                    <div class="relative w-full items-center justify-evenly border border-slate-700 rounded-md mb-24 gap-y-6 p-8 hidden md:flex md:flex-col lg:flex lg:flex-row">
 
                         <p class="font-mullish text-white text-xl">
                             Check out the live demo to learn how RazorpayX works.
@@ -864,11 +867,11 @@
             <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
                 
                 <img src="./images/feature-section1-dottedrows.png" alt=""
-                class="absolute w-[233px] left-[300px] -top-[5rem] z-10">
+                class="absolute w-[233px] left-[300px] -top-[5rem] hidden lg:block z-10">
                 <img src="./images/feature-section1-dottedrows.png" alt=""
                 class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10">
 
-                <div class="w-full grid grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
                     <!-- item 1 -->
                     <div class="relative flex items-center z-0">
                         <h2
@@ -1004,13 +1007,13 @@
         <section class="w-full bg-[url(/images/core-features-sectionBg.svg)]
         bg-no-repeat bg-cover bg-center mt-14 relative py-[12rem] coreFeatureSection">
             <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
-                <h2 class="font-mullish font-bold text-2xl text-center text-white">Features</h2>
+                <h2 class="font-mullish font-bold text-2xl text-center text-white sm:my-16">Features</h2>
                 <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
                 <p class="font-mullish text-center text-white max-w-[450px] mx-auto"
                 >Empower your business with all the right tools to accept online payments and provide the best customer experience</p>
 
                 <!-- grid -->
-                <div class="grid grid-cols-4 gap-[2rem] mt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] mt-8">
                     <!-- card 1 -->
                     <div>
                         <img src="./images/instant-activation-icon.svg" alt="">
@@ -1074,9 +1077,9 @@
 
         <!-- Join Razorpay Section -->
         <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100]">
-            <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4 flex">
+            <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4 flex flex-col md:flex-row">
                 <!-- left part -->
-                <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+                <div class="flex flex-col justify-center md:max-w-[calc(100%-500px)] sm:my-16">
                     <h2 class="font-mullish font-bold text-2xl text-deepBlueHead"
                     >Join the 50,00,000+ businesses using Razorpay
                     </h2>
@@ -1086,7 +1089,7 @@
                 </div>
 
                 <!-- right part -->
-                <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+                <div class="h-[500px] w-[500px] relative overflow-y-hidden mx-auto">
                     <!-- gradient -->
                     <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
                     class="absolute w-full h-[150px] top-0 z-50"> </div>
@@ -1134,7 +1137,7 @@
                 </button>
 
                 <!-- main content -->
-                <div class="flex max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
+                <div class="flex flex-col xl:flex-row max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
                     <!-- left image -->
                     <img src="./images/testimonial.jpg" alt=""
                     loading="lazy"
@@ -1143,17 +1146,17 @@
                     class="rounded-xl">
 
                     <!-- right part -->
-                    <div class="max-w-[400px]">
+                    <div class="max-w-[400px] flex flex-col">
                         <img src="./images/quotes.svg" alt="" 
                         width="35px"
                         height="40px"
-                        class="-mb-2">
-                        <p class="font-mullish text-3xl font-extralight"
+                        class="-mb-2 xl:order-1">
+                        <p class="font-mullish text-3xl font-extralight xl:order-1"
                         >Readymade Closed Wallet Solution For Quick Refunds</p>
-                        <a href="#" class="text-grayText italic underline">Learn More</a>
-                        <p class="font-mullish font-extrabold text-2xl">Lorem Ipsum</p>
-                        <p class="font-mullish font-medium">CEO, XYZ Engineering Company</p>
-                        <img src="./images/fake-company-logo.png" alt="" width="80px" height="40px">
+                        <a href="#" class="text-grayText italic underline xl:order-1">Learn More</a>
+                        <p class="font-mullish font-extrabold text-2xl -order-3 xl:order-1">Lorem Ipsum</p>
+                        <p class="font-mullish font-medium -order-2 xl:order-1">CEO, XYZ Engineering Company</p>
+                        <img src="./images/fake-company-logo.png" alt="" width="80px" height="40px" class="-order-1 xl:order-1">
                     </div>
                 </div>
 
@@ -1182,7 +1185,7 @@
             <div class="w-11/12 max-w-[1080px] relative flex items-center justify-between space-x-20 mx-auto pt-16">
 
                 <!-- left part -->
-                <div class="flex flex-col gap-5 mt-12 max-w-[600px]">
+                <div class="flex flex-col gap-5 mt-12 max-w-[600px] sm:my-16">
 
                     <h2 class="font-mullish font-bold text-2xl text-white">Supercharge your business with Razorpay</h2>
                     <div class="w-6 h-1 bg-greenLight"></div>
@@ -1228,7 +1231,7 @@
                 loading="lazy"
                 width="240px"
                 height="282px"
-                class="mt-7">
+                class="mt-7 hidden lg:block">
             </div>
         </section>
 
